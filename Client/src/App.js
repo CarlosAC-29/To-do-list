@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Jogger from './images/Jogger.png';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className="title">
+        <h1>Checks</h1>
+      </div>
+      <div className='actionBar'>
+        <h2>To-do list</h2>
+        <button className='add-btn'>
+          <span>add</span>
+        </button>
+      </div>
+        <div className='task'>
+          fecha
+          <img classname='Jooger' src={Jogger}/>
+        </div>
+      </div>
+      );
 }
 
-export default App;
+      export default App;
