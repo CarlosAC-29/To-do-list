@@ -14,7 +14,7 @@ function App() {
         </button>
       </div>
         <div className='task'>
-          fecha
+          algo
           <img classname='Jooger' src={Jogger}/>
         </div>
       </div>
