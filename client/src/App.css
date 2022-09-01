@@ -1,0 +1,103 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Righteous';
+  src: url('./fonts/Righteous-Regular.ttf') format('truetype');
+}
+
+
+h1{
+  font-family: 'Righteous', sans-serif;
+  text-align: center;
+  background-color: #04395E;
+  font-size: 8rem;
+  color: #05A8AA;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  background-color: #04395E;
+}
+
+.actionBar{
+  font-family: 'Righteous', sans-serif;
+  display: flex;
+  background-color: #FBAF00;
+  gap: 50px;
+  padding: 18px 30px;
+  font-size: 2.5rem;
+  color: #343434;
+
+
+}
+
+.right-img{
+  display: flex;
+  justify-content: right;
+  position: relative;
+  top: -113px;
+}
+
+.frase{
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  background-color: rgba(4, 57, 94, 0.6);
+  position: absolute;
+  top: 250px;
+  right: 0px;
+  width: 525.5px;
+  padding: 40px 0;
+  font-family: 'Righteous', sans-serif;
+
+}
+
+.btn-add{
+  background: #04395E;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  color: #fff;
+  font-family: 'Righteous', sans-serif;
+  z-index: 1;
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+  z-index: 1;
+}
+
+.btn-add::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: #05A8AA;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btn-add:hover {
+  color: #fff;
+}
+
+.btn-add:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
